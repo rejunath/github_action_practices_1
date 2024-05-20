@@ -6,8 +6,8 @@ on:
 env:
   MONGODB_DB_NAME: gha-demo1
   MONGODB_CLUSTER_ADDRESS: cluster0.a5zuq1t.mongodb.net
-  MONGODB_USERNAME: rejunathaws123
-  MONGODB_PASSWORD: dqfNNKCtIve8iUcQ
+  MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+  MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
   PORT: 8080
 jobs:
   test:
